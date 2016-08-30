@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DFF1AC79-3C03-46A8-A0B0-291059C91DFB}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>F:\source\mbedtest\mbedtest;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\cortex_m4;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;f:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;f:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;f:\sysgcc\arm-eabi\arm-eabi\sys-include;f:\sysgcc\arm-eabi\arm-eabi\include;$(ProjectDir)\mbed;$(ProjectDir)\mbed/TARGET_NUCLEO_F401RE/TARGET_STM/TARGET_STM32F4/TARGET_NUCLEO_F401RE;$(ProjectDir)\mbed/TARGET_NUCLEO_F401RE;$(ProjectDir)\mbed/TARGET_NUCLEO_F401RE/TARGET_STM/TARGET_STM32F4;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)mbedtest-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeIncludeSearchPath>F:\source\mbedtest\mbedtest;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;f:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;f:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;f:\sysgcc\arm-eabi\arm-eabi\sys-include;f:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)mbedtest-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>F:\source\mbedtest\mbedtest;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;f:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;f:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;f:\sysgcc\arm-eabi\arm-eabi\sys-include;f:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)mbedtest-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeIncludeSearchPath>F:\source\mbedtest\mbedtest;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Device\ST\STM32F4xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\CMSIS\RTOS;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F4xxxx-HAL\STM32F4xx_HAL_Driver\Inc;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\arm-eabi\thumb\fpu\cortex_m4;f:\sysgcc\arm-eabi\arm-eabi\include\c++\5.3.0\backward;f:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include;f:\sysgcc\arm-eabi\lib\gcc\arm-eabi\5.3.0\include-fixed;f:\sysgcc\arm-eabi\arm-eabi\sys-include;f:\sysgcc\arm-eabi\arm-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)mbedtest-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="LEDBlink.cpp" />
+    <ClCompile Include="Test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mbed\AnalogIn.h" />
+    <ClInclude Include="mbed\analogin_api.h" />
+    <ClInclude Include="mbed\AnalogOut.h" />
+    <ClInclude Include="mbed\analogout_api.h" />
+    <ClInclude Include="mbed\buffer.h" />
+    <ClInclude Include="mbed\BusIn.h" />
+    <ClInclude Include="mbed\BusInOut.h" />
+    <ClInclude Include="mbed\BusOut.h" />
+    <ClInclude Include="mbed\Callback.h" />
+    <ClInclude Include="mbed\CallChain.h" />
+    <ClInclude Include="mbed\CAN.h" />
+    <ClInclude Include="mbed\can_api.h" />
+    <ClInclude Include="mbed\can_helper.h" />
+    <ClInclude Include="mbed\CircularBuffer.h" />
+    <ClInclude Include="mbed\critical.h" />
+    <ClInclude Include="mbed\CThunk.h" />
+    <ClInclude Include="mbed\DigitalIn.h" />
+    <ClInclude Include="mbed\DigitalInOut.h" />
+    <ClInclude Include="mbed\DigitalOut.h" />
+    <ClInclude Include="mbed\DirHandle.h" />
+    <ClInclude Include="mbed\dma_api.h" />
+    <ClInclude Include="mbed\Driver_Common.h" />
+    <ClInclude Include="mbed\Driver_Storage.h" />
+    <ClInclude Include="mbed\Ethernet.h" />
+    <ClInclude Include="mbed\ethernet_api.h" />
+    <ClInclude Include="mbed\FileBase.h" />
+    <ClInclude Include="mbed\FileHandle.h" />
+    <ClInclude Include="mbed\FileLike.h" />
+    <ClInclude Include="mbed\FilePath.h" />
+    <ClInclude Include="mbed\FileSystemLike.h" />
+    <ClInclude Include="mbed\FunctionPointer.h" />
+    <ClInclude Include="mbed\gpio_api.h" />
+    <ClInclude Include="mbed\gpio_irq_api.h" />
+    <ClInclude Include="mbed\I2C.h" />
+    <ClInclude Include="mbed\I2CSlave.h" />
+    <ClInclude Include="mbed\i2c_api.h" />
+    <ClInclude Include="mbed\InterruptIn.h" />
+    <ClInclude Include="mbed\InterruptManager.h" />
+    <ClInclude Include="mbed\LocalFileSystem.h" />
+    <ClInclude Include="mbed\LowPowerTicker.h" />
+    <ClInclude Include="mbed\LowPowerTimeout.h" />
+    <ClInclude Include="mbed\LowPowerTimer.h" />
+    <ClInclude Include="mbed\lp_ticker_api.h" />
+    <ClInclude Include="mbed\mbed.h" />
+    <ClInclude Include="mbed\mbed_assert.h" />
+    <ClInclude Include="mbed\mbed_debug.h" />
+    <ClInclude Include="mbed\mbed_error.h" />
+    <ClInclude Include="mbed\mbed_interface.h" />
+    <ClInclude Include="mbed\pinmap.h" />
+    <ClInclude Include="mbed\platform.h" />
+    <ClInclude Include="mbed\PlatformMutex.h" />
+    <ClInclude Include="mbed\PortIn.h" />
+    <ClInclude Include="mbed\PortInOut.h" />
+    <ClInclude Include="mbed\PortOut.h" />
+    <ClInclude Include="mbed\port_api.h" />
+    <ClInclude Include="mbed\PwmOut.h" />
+    <ClInclude Include="mbed\pwmout_api.h" />
+    <ClInclude Include="mbed\RawSerial.h" />
+    <ClInclude Include="mbed\rtc_api.h" />
+    <ClInclude Include="mbed\rtc_time.h" />
+    <ClInclude Include="mbed\semihost_api.h" />
+    <ClInclude Include="mbed\Serial.h" />
+    <ClInclude Include="mbed\SerialBase.h" />
+    <ClInclude Include="mbed\serial_api.h" />
+    <ClInclude Include="mbed\SingletonPtr.h" />
+    <ClInclude Include="mbed\sleep_api.h" />
+    <ClInclude Include="mbed\SPI.h" />
+    <ClInclude Include="mbed\SPISlave.h" />
+    <ClInclude Include="mbed\spi_api.h" />
+    <ClInclude Include="mbed\Stream.h" />
+    <ClInclude Include="mbed\Ticker.h" />
+    <ClInclude Include="mbed\ticker_api.h" />
+    <ClInclude Include="mbed\Timeout.h" />
+    <ClInclude Include="mbed\Timer.h" />
+    <ClInclude Include="mbed\TimerEvent.h" />
+    <ClInclude Include="mbed\toolchain.h" />
+    <ClInclude Include="mbed\Transaction.h" />
+    <ClInclude Include="mbed\us_ticker_api.h" />
+    <ClInclude Include="mbed\wait_api.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\arm_common_tables.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\arm_const_structs.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\arm_math.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\cmsis.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\cmsis_nvic.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_ca9.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_caFunc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_caInstr.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_ca_mmu.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm0.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm0plus.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm3.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm4.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm4_simd.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm7.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cmFunc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cmInstr.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cmSecureAccess.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cmSimd.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_sc000.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_sc300.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\hal_tick.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f401xe.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_adc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_adc_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_can.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cec.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_conf.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_conf_template.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cortex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_crc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cryp.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cryp_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dac.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dac_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dcmi.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dcmi_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_def.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dfsdm.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dma.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dma2d.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dma_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dsi.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_eth.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_flash.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_flash_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_flash_ramfunc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_fmpi2c.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_fmpi2c_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_gpio.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_gpio_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_hash.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_hash_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_hcd.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2c.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2c_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2s.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2s_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_irda.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_iwdg.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_lptim.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_ltdc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_ltdc_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_nand.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_nor.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pccard.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pcd.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pcd_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pwr.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pwr_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_qspi.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rcc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rcc_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rng.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rtc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rtc_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sai.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sai_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sd.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sdram.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_smartcard.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_spdifrx.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_spi.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sram.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_tim.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_tim_ex.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_uart.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_usart.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_wwdg.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_fmc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_fsmc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_sdmmc.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_usb.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32_hal_legacy.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\system_stm32f4xx.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\common_objects.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\gpio_object.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\PeripheralPins.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\device.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\objects.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\PeripheralNames.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\PinNames.h" />
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\PortNames.h" />
+    <ClInclude Include="Test.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="mbedtest-Debug.vgdbsettings" />
+    <None Include="mbedtest-Release.vgdbsettings" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

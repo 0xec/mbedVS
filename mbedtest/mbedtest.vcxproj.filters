@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{92e535c9-22b2-4297-bb72-a113c7cd05ef}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{a25ccc25-5fa7-46db-aac9-43c254463241}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{c7e5b04c-079b-462e-8c14-688017a81940}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header files\mbed">
+      <UniqueIdentifier>{93ced82e-23ee-4cdf-920c-c7fbd59135c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\mbed\TARGET_NUCLEO_F401RE">
+      <UniqueIdentifier>{32c82e27-63a6-42a9-be68-910e00dba261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM">
+      <UniqueIdentifier>{8fa03e03-8709-4341-81d8-f95c11c951e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4">
+      <UniqueIdentifier>{fb490dc3-9b86-4ed3-b254-cbc164287790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE">
+      <UniqueIdentifier>{808a723d-52c2-4869-b9fb-8492c023d2d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LEDBlink.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mbed\AnalogIn.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\analogin_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\AnalogOut.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\analogout_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\buffer.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\BusIn.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\BusInOut.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\BusOut.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Callback.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\CallChain.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\CAN.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\can_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\can_helper.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\CircularBuffer.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\critical.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\CThunk.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\DigitalIn.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\DigitalInOut.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\DigitalOut.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\DirHandle.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\dma_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Driver_Common.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Driver_Storage.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Ethernet.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\ethernet_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\FileBase.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\FileHandle.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\FileLike.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\FilePath.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\FileSystemLike.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\FunctionPointer.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\gpio_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\gpio_irq_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\I2C.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\I2CSlave.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\i2c_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\InterruptIn.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\InterruptManager.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\LocalFileSystem.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\LowPowerTicker.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\LowPowerTimeout.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\LowPowerTimer.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\lp_ticker_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\mbed.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\mbed_assert.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\mbed_debug.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\mbed_error.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\mbed_interface.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\pinmap.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\platform.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\PlatformMutex.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\PortIn.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\PortInOut.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\PortOut.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\port_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\PwmOut.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\pwmout_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\RawSerial.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\rtc_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\rtc_time.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\semihost_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Serial.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\SerialBase.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\serial_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\SingletonPtr.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\sleep_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\SPI.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\SPISlave.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\spi_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Stream.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Ticker.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\ticker_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Timeout.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Timer.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TimerEvent.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\toolchain.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\Transaction.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\us_ticker_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\wait_api.h">
+      <Filter>Header files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\arm_common_tables.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\arm_const_structs.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\arm_math.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\cmsis.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\cmsis_nvic.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_ca9.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_caFunc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_caInstr.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_ca_mmu.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm0.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm0plus.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm3.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm4.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm4_simd.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cm7.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cmFunc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cmInstr.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cmSecureAccess.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_cmSimd.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_sc000.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\core_sc300.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\hal_tick.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f401xe.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_adc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_adc_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_can.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cec.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_conf.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_conf_template.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cortex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_crc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cryp.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cryp_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dac.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dac_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dcmi.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dcmi_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_def.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dfsdm.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dma.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dma2d.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dma_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dsi.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_eth.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_flash.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_flash_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_flash_ramfunc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_fmpi2c.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_fmpi2c_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_gpio.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_gpio_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_hash.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_hash_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_hcd.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2c.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2c_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2s.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2s_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_irda.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_iwdg.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_lptim.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_ltdc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_ltdc_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_nand.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_nor.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pccard.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pcd.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pcd_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pwr.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pwr_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_qspi.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rcc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rcc_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rng.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rtc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rtc_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sai.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sai_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sd.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sdram.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_smartcard.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_spdifrx.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_spi.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sram.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_tim.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_tim_ex.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_uart.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_usart.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_wwdg.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_fmc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_fsmc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_sdmmc.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_usb.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\stm32_hal_legacy.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\system_stm32f4xx.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\common_objects.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\gpio_object.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\PeripheralPins.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\device.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\objects.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\PeripheralNames.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\PinNames.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\PortNames.h">
+      <Filter>Header files\mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="mbedtest-Debug.vgdbsettings" />
+    <None Include="mbedtest-Release.vgdbsettings" />
+  </ItemGroup>
+</Project>
